@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Davy</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1e1e2f;
+      color: #f1f1f1;
+    }
+
+    header {
+      background-color: #27293d;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px; /* A largura da imagem */
+      height: 150px; /* A altura da imagem */
+      border-radius: 50%; /* Isso vai arredondar a imagem */
+      border: 4px solid #fff; /* Borda branca mais grossa */
+      object-fit: cover; /* Isso garante que a imagem não fique distorcida */
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 10px 0 5px 0;
+      font-size: 2em;
+    }
+
+    p {
+      margin: 5px 0 20px 0;
+      font-size: 1.1em;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #2d2f4a;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #62d2a2;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "🎯 ";
+    }
+
+    ul.projetos li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    ul.projetos li::before {
+      content: "🎯";
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    ul.projetos li:hover::before {
+      opacity: 0;
+    }
+
+    ul.projetos li::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+      border-radius: 2px;
+    }
+
+    ul.projetos li:hover::after {
+      background-color: #62d2a2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1b2e;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    a {
+      color: #62d2a2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .img-projeto {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .img-logo {
+      max-width: 100px;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://media.discordapp.net/attachments/1096068548729770097/1361854204120924221/20250318_210549.png?ex=68004510&is=67fef390&hm=c0ad6898c849bf7583ba2f59bb965d8e2a4e2d3705d313b0c8082c59093d6b57&=&format=webp&quality=lossless&width=460&height=613" alt="Foto de Davy">
+    <h1>Davy</h1>
+    <p>17 anos | Artista, Dublador e Programador</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>Sobre mim</h2>
+      <p>Sou um jovem criativo apaixonado por tecnologia, arte e comunicação. Me destaco em áreas como desenhos digitais, programação de sites, e dublagem de personagens. Estou sempre buscando novos desafios.</p>
+    </div>
+
+    <div class="card">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Desenho e ilustração digital</li>
+        <li>Dublagem de personagens e narração</li>
+        <li>HTML, CSS e JavaScript</li>
+        <li>Criação de portfólios e páginas web</li>
+        <li>Edição de vídeo e áudio (Adobe Premiere, Audacity)</li>
+        <li>Criação de logos e identidades visuais</li>
+        <li>Conhecimento em Pacote office</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Projetos</h2>
+      <ul class="projetos">
+        <li>
+          <strong>Um desenho de exemplo</strong><br>
+          <img class="img-projeto" src="https://media.discordapp.net/attachments/1096068548729770097/1361856533813792858/Battleblock_Theater_Hatty.jpg?ex=6800473b&is=67fef5bb&hm=3955925bb1a5af59bd7aec6ba84e2d05af17f07c2df0d6447146834a673b9308&=&format=webp&width=1288&height=1288" alt="Desenho de Battleblock Theater">
+        </li>
+
+        <li>
+          <strong>Meu canal de dublagens:</strong>
+          <a href="https://youtube.com/@leonardozyin?si=LP821S67otWcGmp6" target="_blank">Leonardozyn</a><br>
+          <img class="img-logo" src="https://media.discordapp.net/attachments/1096068548729770097/1361862536416198736/image.png?ex=68004cd2&is=67fefb52&hm=447d22278dc83c9af1d5aa3929188425c32ad128a440b969100daf9051c544ee&=&format=webp&quality=lossless&width=1575&height=1575" alt="Logo do canal">
+        </li>
+
+        <li>
+          <strong>Rascunho de uma comic que ainda estou produzindo</strong><br>
+          <img class="img-projeto" src="https://media.discordapp.net/attachments/1096068548729770097/1361861976359174378/Comic_em_andamento.png?ex=68004c4d&is=67fefacd&hm=6123560e792282344a6babb90b77cd84944fe5f95d3a21ee045d6224892ff80d&=&format=webp&quality=lossless&width=1342&height=2685" alt="Comic da Amy">
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:davyzinho3@gmail.com">davyzinho3@gmail.com</a></p>
+      <p>Instagram pessoal: <a href="https://instagram.com/davy_sem_i" target="_blank">@davy_sem_i</a></p>
+      <p>Instagram de desenho: <a href="https://instagram.com/rayrov_o.c.t" target="_blank">@rayrov_o.c.t</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Davy - Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
